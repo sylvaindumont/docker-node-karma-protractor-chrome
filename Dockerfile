@@ -7,4 +7,5 @@ RUN apt-get install -y nodejs
 
 ADD entrypoint.sh /entrypoint.sh
 ENV DISPLAY :99.0
+RUN chmod 755 /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
