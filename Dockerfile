@@ -6,7 +6,7 @@ RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
 RUN apt-get install -y nodejs
 
 ENV DISPLAY :99
-ADD entrypoint.sh /entrypoint.sh
-RUN chmod a+x /entrypoint.sh
+ENV CHROME_BIN /usr/bin/chromium-browser
 
-CMD ["/entrypoint.sh"]
+ADD chromium-browser /usr/bin/chromium-browser
+RUN chmod a+x /usr/bin/chromium-browser
