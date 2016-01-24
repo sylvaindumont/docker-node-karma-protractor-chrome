@@ -7,7 +7,7 @@ RUN curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
     nodejs \
     xvfb \
     chromium \
-    openjdk-7-jre-headles \
+    openjdk-7-jre-headless \
     && rm -rf /var/lib/apt/lists/*
 
 ENV DISPLAY :99
