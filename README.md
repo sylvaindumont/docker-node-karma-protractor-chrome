@@ -1,4 +1,32 @@
-# Chromium in Docker via Xvfb
+# Karma and Protractor in a docker container
 
-This Docker image provides a way to run a real Chromium / Chrome browser headless inside of a Docker container.
-It allows to run Javascript tests with Karma inside of Docker during local development or CI builds
+This image allows to run javascript tests in a headless machine like a CI server.
+
+This image support karma and protractor test under chrome.
+
+Unfortunately, chrome doesn't support container (https://github.com/travis-ci/travis-ci/issues/938), you need to start chrome with --no-sandbox argument to avoid this.
+
+To configure karma and protractor, use this snippets:
+### karma:
+
+    browsers: ['Chrome_no_sandbox'],
+    customLaunchers: {
+      Chrome_no_sandbox: {
+        base: 'Chrome',
+        flags: ['--no-sandbox']
+      }
+    },
+
+### protractor:
+
+    capabilities: {
+      'browserName': 'chrome',
+      'chromeOptions': {
+        'args': ['no-sandbox']
+      }
+    },
+
+## Gitlab CI
+
+To run karma and protractor on gitlab ci, just use this image, and configure karma and protractor as above. 
+http://doc.gitlab.com/ce/ci/yaml/README.html#image-and-services
