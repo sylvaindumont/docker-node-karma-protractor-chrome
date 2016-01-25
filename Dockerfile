@@ -11,7 +11,7 @@ RUN curl -sL https://deb.nodesource.com/setup_5.x | bash - && \
     && rm -rf /var/lib/apt/lists/*
 
 ENV DISPLAY :99
-ENV CHROME_BIN /usr/bin/chromium-browser
+ENV CHROME_BIN /usr/bin/chromium
 
-ADD chromium-browser /usr/bin/chromium-browser
-RUN chmod a+x /usr/bin/chromium-browser
+ADD entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
