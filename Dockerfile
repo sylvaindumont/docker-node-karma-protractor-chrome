@@ -9,7 +9,8 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     chromium \
     libgconf-2-4 \
     openjdk-7-jre-headless \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && npm install -g yarn && npm cache clean
 
 ENV DISPLAY :99
 ENV CHROME_BIN /usr/bin/chromium
