@@ -16,7 +16,7 @@ RUN npm install -g yarn
 ENV DISPLAY :99
 ENV CHROME_BIN /usr/bin/chromium
 
-ADD entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /
 RUN chmod a+x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
