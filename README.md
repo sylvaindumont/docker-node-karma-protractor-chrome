@@ -13,7 +13,7 @@ To configure karma and protractor, use this snippets:
     customLaunchers: {
       Chrome_no_sandbox: {
         base: 'Chrome',
-        flags: ['--no-sandbox']
+        flags: ['--no-sandbox', '--headless', '--disable-gpu']
       }
     },
 
@@ -22,13 +22,13 @@ To configure karma and protractor, use this snippets:
     capabilities: {
       'browserName': 'chrome',
       'chromeOptions': {
-        'args': ['no-sandbox']
+        'args': ['no-sandbox', 'headless', 'disable-gpu']
       }
     },
 
 ## Gitlab CI
 
-To run karma and protractor on gitlab ci, just use this image, and configure karma and protractor as above. 
+To run karma and protractor on gitlab ci, just use this image, and configure karma and protractor as above.
 http://doc.gitlab.com/ce/ci/yaml/README.html#image-and-services
 
 ## On Docker Hub
