@@ -7,3 +7,5 @@ RUN apt-get update && \
     libgconf-2-4 \
     openjdk-7-jre-headless \
     && rm -rf /var/lib/apt/lists/*
+
+ENV CHROME_BIN /usr/bin/chromium
