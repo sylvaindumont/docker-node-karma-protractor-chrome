@@ -13,7 +13,7 @@ To configure karma and protractor, use this snippets:
     customLaunchers: {
       Chrome_no_sandbox: {
         base: 'Chrome',
-        flags: ['--no-sandbox', '--headless', '--disable-gpu']
+        flags: ['--no-sandbox', '--headless', '--disable-gpu', '--remote-debugging-port=9222']
       }
     },
 
