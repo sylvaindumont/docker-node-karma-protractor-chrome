@@ -3,18 +3,18 @@
 
 This image allows to run javascript tests in a headless machine like a CI server.
 
-This image support karma and protractor test under chrome.
+This image support karma and protractor test under chromium.
 
-Unfortunately, chrome doesn't support container (https://github.com/travis-ci/travis-ci/issues/938), you need to start chrome with --no-sandbox argument to avoid this.
+Unfortunately, chromium doesn't support container (https://github.com/travis-ci/travis-ci/issues/938), you need to start chromium with --no-sandbox argument to avoid this.
 
 To configure karma and protractor, use this snippets:
 ### karma:
 
-    browsers: ['Chrome_no_sandbox'],
+    browsers: ['Chromium_no_sandbox'],
     customLaunchers: {
-      Chrome_no_sandbox: {
-        base: 'Chrome',
-        flags: ['--no-sandbox', '--headless', '--disable-gpu', '--remote-debugging-port=9222']
+      Chromium_no_sandbox: {
+        base: 'ChromiumHeadless',
+        flags: ['--no-sandbox']
       }
     },
 
