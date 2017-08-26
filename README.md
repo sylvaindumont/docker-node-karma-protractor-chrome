@@ -9,24 +9,30 @@ Unfortunately, chromium doesn't support container (https://github.com/travis-ci/
 
 To configure karma and protractor, use this snippets:
 ### karma:
-
-    browsers: ['Chromium_no_sandbox'],
-    customLaunchers: {
-      Chromium_no_sandbox: {
-        base: 'ChromiumHeadless',
-        flags: ['--no-sandbox']
-      }
-    },
+```javascript
+browsers: ['Chromium_no_sandbox'],
+customLaunchers: {
+  Chromium_no_sandbox: {
+    base: 'ChromiumHeadless',
+    flags: ['--no-sandbox']
+  }
+},
+```
+ChromiumHeadless is available since karma-chrome-launcher@2.2.0, on previous versions use:
+```javascript
+base: 'Chromium',
+flags: ['--no-sandbox', '--headless', '--disable-gpu', '--remote-debugging-port=9222']
+```
 
 ### protractor:
-
-    capabilities: {
-      'browserName': 'chrome',
-      'chromeOptions': {
-        'args': ['no-sandbox', 'headless', 'disable-gpu']
-      }
-    },
-
+```javascript
+capabilities: {
+  'browserName': 'chrome',
+  'chromeOptions': {
+    'args': ['no-sandbox', 'headless', 'disable-gpu']
+  }
+},
+```
 ## Headless mode
 
 Chromium recently [added headless support](https://chromium.googlesource.com/chromium/src/+/lkgr/headless/README.md).
