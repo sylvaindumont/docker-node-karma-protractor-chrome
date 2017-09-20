@@ -5,7 +5,7 @@ RUN apk add --no-cache \
     build-base \
     git \
     bash \
-    chromium libexif udev \
+    chromium libexif udev freetype \
     openjdk8-jre-base
 
 ENV CHROME_BIN /usr/bin/chromium-browser
