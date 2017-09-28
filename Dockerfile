@@ -7,9 +7,7 @@ RUN apk add --no-cache \
     bash \
     openjdk8-jre-base \
     # chromium dependencies
-    libexif \
     udev \
-    freetype \
     ttf-freefont \
     chromium-chromedriver \
     chromium
