@@ -10,7 +10,7 @@ RUN apk add --no-cache \
     libexif \
     udev \
     freetype \
-    zlib-dev \
+    glib-dev \
     ttf-freefont \
     chromium
 
