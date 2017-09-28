@@ -5,7 +5,13 @@ RUN apk add --no-cache \
     build-base \
     git \
     bash \
-    chromium libexif udev freetype \
-    openjdk8-jre-base
+    openjdk8-jre-base \
+    # chromium dependencies
+    libexif \
+    udev \
+    freetype \
+    zlib-dev \
+    ttf-freefont \
+    chromium
 
 ENV CHROME_BIN /usr/bin/chromium-browser
