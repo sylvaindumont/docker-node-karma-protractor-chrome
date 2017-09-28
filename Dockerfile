@@ -10,8 +10,8 @@ RUN apk add --no-cache \
     libexif \
     udev \
     freetype \
-    glib-dev \
     ttf-freefont \
+    chromium-chromedriver \
     chromium
 
 ENV CHROME_BIN /usr/bin/chromium-browser
