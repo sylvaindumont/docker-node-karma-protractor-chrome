@@ -1,4 +1,6 @@
-[![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome "Get your own image badge on microbadger.com")
+alpine headless: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome:alpine.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:alpine "alpine headless")   
+debian headless: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome "debian headless")   
+xvfb: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome:headless.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:headless "Get your own image badge on microbadger.com")   
 # Karma and Protractor in a docker container
 
 This image allows to run javascript tests in a headless machine like a CI server.
@@ -42,6 +44,13 @@ If you don't want to use the headless  mode, use
 [![](https://images.microbadger.com/badges/version/weboaks/node-karma-protractor-chrome:xvfb.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:xvfb "Get your own version badge on microbadger.com")
 or
 [![](https://images.microbadger.com/badges/version/weboaks/node-karma-protractor-chrome.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome "Get your own version badge on microbadger.com") and follow instructions in [that readme](https://github.com/sylvaindumont/docker-node-karma-protractor-chrome/tree/xvfb)
+
+## Alpine Headless
+To use alpine instead of debian, follow headless instructions and add this to protractor config :
+```
+chromeDriver: '/usr/bin/chromedriver',
+```
+
 
 ## Gitlab CI
 
