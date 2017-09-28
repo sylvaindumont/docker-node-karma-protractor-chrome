@@ -43,6 +43,17 @@ If you don't want to use the headless  mode, use
 or
 [![](https://images.microbadger.com/badges/version/weboaks/node-karma-protractor-chrome.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome "Get your own version badge on microbadger.com") and follow instructions in [that readme](https://github.com/sylvaindumont/docker-node-karma-protractor-chrome/tree/xvfb)
 
+## Alpine Headless
+Headless mode work on alpine too.
+If you want to use headless mode use the [![](https://images.microbadger.com/badges/version/weboaks/node-karma-protractor-chrome:alpine.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:alpine "Get your own version badge on microbadger.com")  version and follow instructions in this [that readme](https://github.com/sylvaindumont/docker-node-karma-protractor-chrome/tree/alpine).
+```
+chromeDriver: '/usr/bin/chromedriver',
+capabilities: {
+  'browserName': 'chrome',
+  'chromeOptions': {
+    'args': ['no-sandbox', 'headless', 'disable-gpu']
+  }
+},```
 ## Gitlab CI
 
 To run karma and protractor on gitlab ci, just use this image, and configure karma and protractor as above.
