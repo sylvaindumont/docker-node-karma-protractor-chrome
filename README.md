@@ -1,11 +1,11 @@
-alpine headless: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome:alpine.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:alpine "alpine headless")   
-debian headless: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome "debian headless")   
-xvfb: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome:headless.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:headless "Get your own image badge on microbadger.com") 
-
 [![docker stars](https://img.shields.io/docker/stars/weboaks/node-karma-protractor-chrome.svg)](https://hub.docker.com/r/weboaks/node-karma-protractor-chrome/)
 [![docker pulls](https://img.shields.io/docker/pulls/weboaks/node-karma-protractor-chrome.svg)](https://hub.docker.com/r/weboaks/node-karma-protractor-chrome/)
 [![docker build](https://img.shields.io/docker/build/weboaks/node-karma-protractor-chrome.svg)](https://hub.docker.com/r/weboaks/node-karma-protractor-chrome/)
 [![automated build](https://img.shields.io/docker/automated/weboaks/node-karma-protractor-chrome.svg)](https://hub.docker.com/r/weboaks/node-karma-protractor-chrome/)
+
+alpine headless: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome:alpine.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:alpine "alpine headless")   
+debian headless: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome "debian headless")   
+xvfb: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome:headless.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:headless "Get your own image badge on microbadger.com") 
 
 # Karma and Protractor in a docker container
 
