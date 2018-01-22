@@ -3,6 +3,7 @@
 [![docker build](https://img.shields.io/docker/build/weboaks/node-karma-protractor-chrome.svg)](https://hub.docker.com/r/weboaks/node-karma-protractor-chrome/)
 [![automated build](https://img.shields.io/docker/automated/weboaks/node-karma-protractor-chrome.svg)](https://hub.docker.com/r/weboaks/node-karma-protractor-chrome/)
 [![travis  build](https://travis-ci.org/sylvaindumont/docker-node-karma-protractor-chrome.svg?branch=master)](https://travis-ci.org/sylvaindumont/docker-node-karma-protractor-chrome)
+
 alpine headless: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome:alpine.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:alpine 'alpine headless')  
 debian headless: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome 'debian headless')  
 xvfb: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome:headless.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:headless 'Get your own image badge on microbadger.com')
@@ -17,7 +18,7 @@ Unfortunately, chromium doesn't support container (https://github.com/travis-ci/
 
 To configure karma and protractor, use this snippets:
 
-### karma:
+### karma
 
 ```javascript
 browsers: ['Chromium_no_sandbox'],
@@ -36,7 +37,7 @@ base: 'Chromium',
 flags: ['--no-sandbox', '--headless', '--disable-gpu', '--remote-debugging-port=9222']
 ```
 
-### protractor:
+### protractor
 
 ```javascript
 capabilities: {
