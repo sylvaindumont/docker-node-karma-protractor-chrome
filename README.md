@@ -2,7 +2,7 @@
 [![docker pulls](https://img.shields.io/docker/pulls/weboaks/node-karma-protractor-chrome.svg)](https://hub.docker.com/r/weboaks/node-karma-protractor-chrome/)
 [![docker build](https://img.shields.io/docker/build/weboaks/node-karma-protractor-chrome.svg)](https://hub.docker.com/r/weboaks/node-karma-protractor-chrome/)
 [![automated build](https://img.shields.io/docker/automated/weboaks/node-karma-protractor-chrome.svg)](https://hub.docker.com/r/weboaks/node-karma-protractor-chrome/)
-
+[![travis  build](https://travis-ci.org/sylvaindumont/docker-node-karma-protractor-chrome.svg?branch=master)](https://travis-ci.org/sylvaindumont/docker-node-karma-protractor-chrome)
 alpine headless: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome:alpine.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:alpine 'alpine headless')  
 debian headless: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome 'debian headless')  
 xvfb: [![](https://images.microbadger.com/badges/image/weboaks/node-karma-protractor-chrome:headless.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:headless 'Get your own image badge on microbadger.com')
@@ -72,6 +72,12 @@ chromeDriver: '/usr/bin/chromedriver',
 Others debian `headless` node versions are avalaible via the `debian-node6` `debian-node8` `debian-node9` tags.
 
 Others `alpine` headless node versions are avalaible via the `alpine-node6` `alpine-node8` `alpine-node9` tags.
+
+## Pinned tags
+
+`headless`, `alpine`, `debian-node*` and `alpine-node*` are automated build, rebuild each time a commit is pushed to this repo and each time an image is pushed to official `node` image. These tags are always up to date, but can break builds with a new node version or a new chromium versions.
+
+`debian-<commit-hash>` and `alpine-<commit-hash>` tags are available to target a specific commit, they are never rebuilt and will have the same node and chromium version forever.
 
 ## Gitlab CI
 
