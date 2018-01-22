@@ -6,11 +6,6 @@ RUN apt-get update && \
     chromium \
     libgconf-2-4 \
     openjdk-8-jre-headless \
-    && rm -rf /var/lib/apt/lists/* \
-    && groupadd -r chromium && useradd -r -g chromium -G audio,video chromium \
-    && mkdir -p /home/chromium \
-    && chown -R chromium:chromium /home/chromium
-
-USER chromium
+    && rm -rf /var/lib/apt/lists/*
 
 ENV CHROME_BIN /usr/bin/chromium
