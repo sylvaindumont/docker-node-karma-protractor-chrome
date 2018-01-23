@@ -10,11 +10,8 @@ RUN echo @edge http://nl.alpinelinux.org/alpine/edge/community >> /etc/apk/repos
     # chromium dependencies
     nss@edge \
     chromium-chromedriver@edge \
-    chromium@edge \
-    && addgroup -S chromium && adduser -S -g chromium chromium \
-    && mkdir -p /home/chromium \
-    && chown -R chromium:chromium /home/chromium
+    chromium@edge
 
-USER chromium
+USER node
 
 ENV CHROME_BIN /usr/bin/chromium-browser
