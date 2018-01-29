@@ -9,6 +9,7 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - && \
     nodejs \
     xvfb \
     chromium \
+    chromedriver \
     libgconf-2-4 \
     openjdk-8-jre-headless \
     yarn \
