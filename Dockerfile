@@ -12,6 +12,4 @@ RUN echo @edge http://nl.alpinelinux.org/alpine/edge/community >> /etc/apk/repos
     chromium-chromedriver@edge \
     chromium@edge
 
-USER node
-
 ENV CHROME_BIN /usr/bin/chromium-browser

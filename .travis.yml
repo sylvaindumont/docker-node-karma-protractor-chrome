@@ -4,6 +4,6 @@ services:
   - docker
 
 script:
-  - docker build -t weboaks/node-karma-protractor-chrome:alpine-$(git rev-parse HEAD) .
+  - docker build -t weboaks/node-karma-protractor-chrome:alpine-root-$(git rev-parse HEAD) .
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
   - docker push weboaks/node-karma-protractor-chrome:alpine-$(git rev-parse HEAD)
