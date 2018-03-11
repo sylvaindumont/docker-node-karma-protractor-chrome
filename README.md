@@ -74,6 +74,10 @@ Others debian `headless` node versions are avalaible via the `debian-node6` `deb
 
 Others `alpine` headless node versions are avalaible via the `alpine-node6` `alpine-node8` `alpine-node9` tags.
 
+## Root versions
+
+`debian*` and `alpine*` have no root access, if you need root access use `debian-root`, `alpine-root`, or `xvfb`
+
 ## Pinned tags
 
 `headless`, `alpine`, `debian-node*` and `alpine-node*` are automated build, rebuild each time a commit is pushed to this repo and each time an image is pushed to official `node` image. These tags are always up to date, but can break builds with a new node version or a new chromium versions.
