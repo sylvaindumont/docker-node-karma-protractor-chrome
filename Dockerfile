@@ -9,6 +9,7 @@ RUN echo @edge http://nl.alpinelinux.org/alpine/edge/community >> /etc/apk/repos
     openjdk8-jre-base \
     # chromium dependencies
     nss@edge \
+    harfbuzz@edge \
     chromium-chromedriver@edge \
     chromium@edge
 
