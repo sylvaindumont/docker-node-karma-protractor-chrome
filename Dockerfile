@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-RUN echo @edge http://nl.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories \
+RUN sed -i -e 's/v3.6/edge/g' /etc/apk/repositories  \
     && apk add --no-cache \
     python \
     build-base \
@@ -8,9 +8,9 @@ RUN echo @edge http://nl.alpinelinux.org/alpine/edge/community >> /etc/apk/repos
     bash \
     openjdk8-jre-base \
     # chromium dependencies
-    nss@edge \
-    harfbuzz@edge \
-    chromium-chromedriver@edge \
-    chromium@edge
+    nss \
+    chromium-chromedriver \
+    chromium \
+    && apk upgrade --no-cache --available
 
 ENV CHROME_BIN /usr/bin/chromium-browser
