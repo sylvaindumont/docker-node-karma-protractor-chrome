@@ -1,7 +1,6 @@
 FROM node:8-alpine
 
 RUN sed -i -e 's/v3.6/edge/g' /etc/apk/repositories \
-    && apk upgrade --no-cache --available \
     && apk add --no-cache \
     python \
     build-base \
@@ -11,7 +10,8 @@ RUN sed -i -e 's/v3.6/edge/g' /etc/apk/repositories \
     # chromium dependencies
     nss \
     chromium-chromedriver \
-    chromium
+    chromium \
+    && apk upgrade --no-cache --available
 
 USER node
 
