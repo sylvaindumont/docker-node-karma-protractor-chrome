@@ -4,6 +4,7 @@ RUN apt-get update && \
     DEBIAN_FRONTEND="noninteractive" \
     apt-get install -y --no-install-recommends \
     chromium=72.0.3626.122-1~deb9u1 \
+    libatk-bridge2.0-0 \
     libgconf-2-4 \
     openjdk-8-jre-headless \
     && rm -rf /var/lib/apt/lists/*
