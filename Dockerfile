@@ -5,6 +5,7 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     chromium \
     libatk-bridge2.0-0 \
+    libgtk-3-0 \
     libgconf-2-4 \
     openjdk-8-jre-headless \
     && rm -rf /var/lib/apt/lists/*
