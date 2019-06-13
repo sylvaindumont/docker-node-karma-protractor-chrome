@@ -1,6 +1,6 @@
 FROM node:10-alpine
 
-RUN sed -i -e 's/v3.8/edge/g' /etc/apk/repositories  \
+RUN sed -i -e 's/v3.9/edge/g' /etc/apk/repositories  \
     && apk add --no-cache \
     python \
     build-base \
