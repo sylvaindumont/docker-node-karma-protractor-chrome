@@ -1,4 +1,4 @@
-FROM buildpack-deps:stretch
+FROM buildpack-deps:buster
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
@@ -11,7 +11,7 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     chromium \
     chromium-driver \
     libgconf-2-4 \
-    openjdk-8-jre-headless \
+    openjdk-11-jre-headless \
     yarn \
     && rm -rf /var/lib/apt/lists/*
 
