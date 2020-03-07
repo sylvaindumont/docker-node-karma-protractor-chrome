@@ -4,6 +4,6 @@ services:
   - docker
 
 script:
-  - docker build -t weboaks/node-karma-protractor-chrome:debian-$(git rev-parse HEAD) .
+  - docker build -t weboaks/node-karma-protractor-chrome:xvfb-$(git rev-parse HEAD) .
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push weboaks/node-karma-protractor-chrome:xvfb-$(git rev-parse HEAD)
