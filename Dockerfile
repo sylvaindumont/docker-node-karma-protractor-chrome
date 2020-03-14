@@ -4,6 +4,7 @@ RUN apt-get update && \
     DEBIAN_FRONTEND="noninteractive" \
     apt-get install -y --no-install-recommends \
     chromium \
+    chromium-driver \
     libatk-bridge2.0-0 \
     libgtk-3-0 \
     libgconf-2-4 \
