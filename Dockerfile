@@ -1,8 +1,8 @@
-FROM node:14-alpine3.11
+FROM node:14-alpine3.12
 
-RUN sed -i -e 's/v3.11/edge/g' /etc/apk/repositories \
+RUN sed -i -e 's/v3.12/edge/g' /etc/apk/repositories \
     && apk add --no-cache \
-    python \
+    python2 \
     build-base \
     git \
     bash \
