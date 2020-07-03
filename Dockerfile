@@ -2,7 +2,7 @@ FROM node:12-alpine3.11
 
 RUN sed -i -e 's/v3.11/edge/g' /etc/apk/repositories \
     && apk add --no-cache \
-    python \
+    python2 \
     build-base \
     git \
     bash \
