@@ -86,9 +86,9 @@ chromeDriver: '/usr/bin/chromedriver',
 
 [![](https://images.microbadger.com/badges/version/weboaks/node-karma-protractor-chrome:headless.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:headless) and [![](https://images.microbadger.com/badges/version/weboaks/node-karma-protractor-chrome:alpine.svg)](https://microbadger.com/images/weboaks/node-karma-protractor-chrome:alpine) use the latest LTS node.
 
-Others debian `headless` node versions are avalaible via the `debian-node6` `debian-node8` `debian-node9` tags.
+Others debian `headless` node versions are avalaible via the `debian-node12` `debian-node14` `debian-node16` tags.
 
-Others `alpine` headless node versions are avalaible via the `alpine-node6` `alpine-node8` `alpine-node9` tags.
+Others `alpine` headless node versions are avalaible via the `alpine-node12` `alpine-node14` `alpine-node16` tags.
 
 ### root versions
 
