@@ -1,4 +1,4 @@
-FROM node:14-buster
+FROM node:16-buster
 
 RUN apt-get update && \
     DEBIAN_FRONTEND="noninteractive" \
