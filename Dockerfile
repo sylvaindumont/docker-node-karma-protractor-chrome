@@ -1,4 +1,4 @@
-FROM node:14-alpine3.13
+FROM node:16-alpine3.13
 
 RUN sed -i -e 's/v3.13/edge/g' /etc/apk/repositories  \
     && apk add --no-cache \
